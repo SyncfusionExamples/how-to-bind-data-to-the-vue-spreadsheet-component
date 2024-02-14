@@ -56,52 +56,99 @@
         <e-sheet name="Monthly Budget">
           <e-rows>
             <e-row>
-                <e-cells>
+              <e-cells>
                     <e-cell value="Category"></e-cell>
                     <e-cell value="Planned cost"></e-cell>
                     <e-cell value="Actual cost"></e-cell>
+                    <e-cell value="Difference"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Food"></e-cell>
-                    <e-cell value="$7000"></e-cell>
-                    <e-cell value="$8120"></e-cell>
+                    <e-cell value="7000" :format="currencyFormat"></e-cell>
+                    <e-cell value="8120" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B2-C2" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Loan"></e-cell>
-                    <e-cell value="$1500"></e-cell>
-                    <e-cell value="$1500"></e-cell>
+                    <e-cell value="1500" :format="currencyFormat"></e-cell>
+                    <e-cell value="1500" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B3-C3" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Medical"></e-cell>
-                    <e-cell value="$300"></e-cell>
-                    <e-cell value="$0"></e-cell>
+                    <e-cell value="300" :format="currencyFormat"></e-cell>
+                    <e-cell value="0" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B4-C4" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Clothing"></e-cell>
-                    <e-cell value="$400"></e-cell>
-                    <e-cell value="$140"></e-cell>
+                    <e-cell value="400" :format="currencyFormat"></e-cell>
+                    <e-cell value="140" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B5-C5" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Education"></e-cell>
-                    <e-cell value="$900"></e-cell>
-                    <e-cell value="$750"></e-cell>
+                    <e-cell value="900" :format="currencyFormat"></e-cell>
+                    <e-cell value="750" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B6-C6" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
             <e-row>
                 <e-cells>
                     <e-cell value="Insurance"></e-cell>
-                    <e-cell value="$30"></e-cell>
-                    <e-cell value="$30"></e-cell>
+                    <e-cell value="30" :format="currencyFormat"></e-cell>
+                    <e-cell value="30" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B7-C7" :format="currencyFormat"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell value="Utilities"></e-cell>
+                    <e-cell value="130" :format="currencyFormat"></e-cell>
+                    <e-cell value="160" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B8-C8" :format="currencyFormat"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell value="Enterainment"></e-cell>
+                    <e-cell value="500" :format="currencyFormat"></e-cell>
+                    <e-cell value="730" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B9-C9" :format="currencyFormat"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell value="Maintainance"></e-cell>
+                    <e-cell value="50" :format="currencyFormat"></e-cell>
+                    <e-cell value="70" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B10-C10" :format="currencyFormat"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell value="Transportation"></e-cell>
+                    <e-cell value="250" :format="currencyFormat"></e-cell>
+                    <e-cell value="400" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B11-C11" :format="currencyFormat"></e-cell>
+                </e-cells>
+            </e-row>
+            <e-row>
+                <e-cells>
+                    <e-cell value="Gifts/Donations"></e-cell>
+                    <e-cell value="0" :format="currencyFormat"></e-cell>
+                    <e-cell value="100" :format="currencyFormat"></e-cell>
+                    <e-cell formula="=B12-C12" :format="currencyFormat"></e-cell>
                 </e-cells>
             </e-row>
           </e-rows> 
